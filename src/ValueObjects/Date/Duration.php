@@ -12,7 +12,7 @@ use Carbon\CarbonImmutable;
 final class Duration implements ValueObjectInterface
 {
     public function __construct(
-        public int $amount,
+        public float $amount,
         public DurationUnit $unit
     ) {}
 

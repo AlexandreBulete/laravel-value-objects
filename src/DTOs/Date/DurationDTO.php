@@ -12,11 +12,11 @@ final class DurationDTO implements DTOInterface
     use JsonSerializableTrait;
 
     /**
-     * @param  int  $amount
+     * @param  float  $amount
      * @param  string  $unit
      */
     public function __construct(
-        public int $amount,
+        public float $amount,
         public string $unit
     ) {}
 

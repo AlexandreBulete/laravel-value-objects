@@ -36,7 +36,7 @@ final class Period implements ValueObjectInterface
             DurationUnit::Years   => $this->start->diffInYears($this->end),
         };
 
-        return new Duration($amount, $unit);
+        return new Duration((float) $amount, $unit);
     }
 
     /**
