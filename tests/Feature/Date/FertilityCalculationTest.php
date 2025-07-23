@@ -18,5 +18,5 @@ it('calculates the fertility period correctly', function () {
 
     expect($dto->start)->toBe('2024-06-11T00:00:00+00:00');
     expect($dto->end)->toBe('2024-06-17T00:00:00+00:00');
-    expect($dto->diff['days'])->toBe(6);
+    expect($dto->diff['days'])->toBe(6.0);
 });

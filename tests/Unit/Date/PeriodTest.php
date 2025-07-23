@@ -15,7 +15,8 @@ it('creates a valid period and returns correct diff', function () {
 
     expect($dto->start)->toBe('2024-06-01T00:00:00+00:00');
     expect($dto->end)->toBe('2024-06-05T00:00:00+00:00');
-    expect($dto->diff['days'])->toBe(4);
+    expect($dto->diff['days'])->toBe(4.0);
+    expect($dto->diff['hours'])->toBe(96.0);
 });
 
 it('throws an exception if start is after end', function () {

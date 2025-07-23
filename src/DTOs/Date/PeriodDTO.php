@@ -14,7 +14,7 @@ final class PeriodDTO implements DTOInterface
     /**
      * @param  string  $start
      * @param  string  $end
-     * @param  array<string, int>  $diff
+     * @param  array<string, float>  $diff
      */
     public function __construct(
         public string $start,
