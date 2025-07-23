@@ -17,6 +17,6 @@ it('returns correct array and string representations', function () {
         'diff'  => ['days' => 4, 'hours' => 96],
     ]);
 
-    expect((string)$dto)->toBe('2024-06-01T00:00:00+00:00 - 2024-06-05T00:00:00+00:00');
+    expect((string) $dto)->toBe('2024-06-01T00:00:00+00:00 - 2024-06-05T00:00:00+00:00');
     expect(json_encode($dto))->toBe(json_encode($dto->toArray()));
 });

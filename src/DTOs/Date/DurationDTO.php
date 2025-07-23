@@ -11,6 +11,10 @@ final class DurationDTO implements DTOInterface
 {
     use JsonSerializableTrait;
 
+    /**
+     * @param  int  $amount
+     * @param  string  $unit
+     */
     public function __construct(
         public int $amount,
         public string $unit
@@ -20,7 +24,7 @@ final class DurationDTO implements DTOInterface
     {
         return [
             'amount' => $this->amount,
-            'unit' => $this->unit,
+            'unit'   => $this->unit,
         ];
     }
 

@@ -24,11 +24,11 @@ final class Duration implements ValueObjectInterface
         return match ($this->unit) {
             DurationUnit::Seconds => $date->addSeconds($this->amount),
             DurationUnit::Minutes => $date->addMinutes($this->amount),
-            DurationUnit::Hours => $date->addHours($this->amount),
-            DurationUnit::Days => $date->addDays($this->amount),
-            DurationUnit::Weeks => $date->addWeeks($this->amount),
-            DurationUnit::Months => $date->addMonths($this->amount),
-            DurationUnit::Years => $date->addYears($this->amount),
+            DurationUnit::Hours   => $date->addHours($this->amount),
+            DurationUnit::Days    => $date->addDays($this->amount),
+            DurationUnit::Weeks   => $date->addWeeks($this->amount),
+            DurationUnit::Months  => $date->addMonths($this->amount),
+            DurationUnit::Years   => $date->addYears($this->amount),
         };
     }
 

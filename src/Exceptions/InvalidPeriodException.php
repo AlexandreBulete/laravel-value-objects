@@ -6,6 +6,4 @@ namespace AlexandreBulete\ValueObjects\Exceptions;
 
 use InvalidArgumentException;
 
-final class InvalidPeriodException extends InvalidArgumentException
-{
-}
+final class InvalidPeriodException extends InvalidArgumentException {}

@@ -11,18 +11,23 @@ final class PeriodDTO implements DTOInterface
 {
     use JsonSerializableTrait;
 
+    /**
+     * @param  string  $start
+     * @param  string  $end
+     * @param  array<string, int>  $diff
+     */
     public function __construct(
         public string $start,
         public string $end,
-        public array $diff // ['seconds' => ..., 'minutes' => ..., ...]
+        public array $diff,
     ) {}
 
     public function toArray(): array
     {
         return [
             'start' => $this->start,
-            'end' => $this->end,
-            'diff' => $this->diff,
+            'end'   => $this->end,
+            'diff'  => $this->diff,
         ];
     }
 

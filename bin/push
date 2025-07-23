@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+. ./bin/pint
+. ./bin/ci
+
+git push
