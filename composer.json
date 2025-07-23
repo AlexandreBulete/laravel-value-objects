@@ -1,0 +1,35 @@
+{
+    "name": "alexandrebulete/laravel-value-objects",
+    "description": "A growing set of reusable Laravel-native value objects.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Bulete",
+            "email": "bulete.alexandre@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AlexandreBulete\\ValueObjects\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0",
+        "nesbot/carbon": "^2.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpunit/phpunit": "^10.0",
+        "laravel/pint": "^1.24"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

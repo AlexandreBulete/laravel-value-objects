@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Global formatting..."
+./vendor/bin/pint
+
+echo "Enrichment of ValueObjects and DTOs with strict_types and final classes"
+./vendor/bin/pint --config=pint.strict.json src/DTOs src/ValueObjects

@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+
+vendor/
+
+.php_cs
+.php_cs.cache
+.php-cs-fixer.cache
+.pint.cache
+.phpunit*.cache
+
+tests/tmp/
+
+phpunit.xml
+psalm.xml
+testbench.yaml

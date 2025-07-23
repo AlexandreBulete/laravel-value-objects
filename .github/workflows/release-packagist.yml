@@ -1,0 +1,23 @@
+name: Release on Packagist
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Notify Packagist
+        uses: ramsey/composer-install@v3
+
+      - name: Trigger Packagist update
+        uses: crazy-max/ghaction-packagist@v3
+        with:
+          username: ${{ github.repository_owner }}
+          api_token: ${{ secrets.PACKAGIST_TOKEN }}
+          package: ${{ github.repository }}
