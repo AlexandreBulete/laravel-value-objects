@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use AlexandreBulete\ValueObjects\Date\Period;
+use AlexandreBulete\ValueObjects\ValueObjects\Date\Period;
 use Carbon\CarbonImmutable;
 
 it('calculates the fertility period correctly', function () {

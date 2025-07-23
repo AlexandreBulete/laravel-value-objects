@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AlexandreBulete\ValueObjects\Date;
+namespace AlexandreBulete\ValueObjects\ValueObjects\Date;
 
 use AlexandreBulete\ValueObjects\Contracts\ValueObjectInterface;
 use AlexandreBulete\ValueObjects\DTOs\Date\PeriodDTO;

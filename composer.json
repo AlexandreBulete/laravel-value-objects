@@ -14,6 +14,11 @@
             "AlexandreBulete\\ValueObjects\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "AlexandreBulete\\ValueObjects\\Tests\\": "tests"
+        }
+    },
     "require": {
         "php": "^8.2",
         "illuminate/support": "^10.0",
